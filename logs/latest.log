@@ -1,0 +1,234 @@
+[17:46:28] [ServerMain/INFO]: [bootstrap] Running Java 23 (OpenJDK 64-Bit Server VM 23.0.2; Arch Linux null) on Linux 6.13.7-arch1-1 (amd64)
+[17:46:28] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-212-main@bb1beda (2025-03-17T10:10:58Z) for Minecraft 1.21.4
+[17:46:28] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:46:28] [ServerMain/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[17:46:35] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17:46:35] [Yggdrasil Key Fetcher/ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to api.minecraftservices.com
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-6.0.57.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-6.0.57.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-6.0.57.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-6.0.57.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+Caused by: java.net.UnknownHostException: api.minecraftservices.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:760) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1288) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-6.0.57.jar:?]
+	... 9 more
+[17:46:35] [ServerMain/INFO]: Found new data pack file/machinegun, loading it automatically
+[17:46:38] [ServerMain/INFO]: Loaded 1370 recipes
+[17:46:38] [ServerMain/ERROR]: Failed to load function machinegun:tick
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 6: Can't find element 'minecraft:generic.max_health' of type 'minecraft:attribute' at position 88: ...max_health<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1814) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1460) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2036) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 6: Can't find element 'minecraft:generic.max_health' of type 'minecraft:attribute' at position 88: ...max_health<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:92) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812) ~[?:?]
+	... 5 more
+[17:46:38] [ServerMain/ERROR]: Couldn't load tag minecraft:tick as it is missing following references: machinegun:tick (from file/machinegun)
+[17:46:38] [ServerMain/INFO]: Loaded 1481 advancements
+[17:46:38] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[17:46:39] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 398.1ms
+[17:46:39] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[17:46:39] [Server thread/INFO]: Loading properties
+[17:46:40] [Server thread/INFO]: This server is running Paper version 1.21.4-212-main@bb1beda (2025-03-17T10:10:58Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[17:46:40] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[17:46:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:46:40] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:46:41] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[17:46:41] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:46:42] [Server thread/INFO]: Default game type: SURVIVAL
+[17:46:42] [Server thread/INFO]: Generating keypair
+[17:46:42] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:3000
+[17:46:42] [Server thread/INFO]: Using epoll channel type
+[17:46:42] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[17:46:42] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[17:46:42] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:46:42] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:46:42] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:46:42] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:46:42] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:46:42] [Server thread/INFO]: Preparing level "world"
+[17:46:43] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:46:43] [Server thread/INFO]: Preparing spawn area: 0%
+[17:46:44] [Server thread/INFO]: Preparing spawn area: 0%
+[17:46:44] [Server thread/INFO]: Preparing spawn area: 0%
+[17:46:44] [Server thread/INFO]: Preparing spawn area: 0%
+[17:46:44] [Server thread/INFO]: Time elapsed: 1577 ms
+[17:46:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:46:45] [Server thread/INFO]: Preparing spawn area: 0%
+[17:46:45] [Server thread/INFO]: Time elapsed: 415 ms
+[17:46:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:46:45] [Server thread/INFO]: Preparing spawn area: 0%
+[17:46:45] [Server thread/INFO]: Time elapsed: 348 ms
+[17:46:46] [Server thread/INFO]: [spark] Starting background profiler...
+[17:46:46] [Server thread/INFO]: Done preparing level "world" (3.620s)
+[17:46:46] [Server thread/INFO]: Running delayed init tasks
+[17:46:46] [Server thread/INFO]: Done (19.693s)! For help, type "help"
+[17:47:43] [User Authenticator #0/INFO]: UUID of player Trmaa_vm is db020031-8a22-3e35-bc85-bdc9db5efdee
+[17:47:43] [Server thread/INFO]: Trmaa_vm joined the game
+[17:47:44] [Server thread/INFO]: Trmaa_vm[/127.0.0.1:60006] logged in with entity id 96 at ([world]2.0604647237683658, 72.0, 30.56074729151003)
+[17:48:12] [Server thread/INFO]: There are 4 data pack(s) enabled: [vanilla (built-in)], [file/bukkit (world)], [paper (built-in)], [file/machinegun (world)]
+[17:48:12] [Server thread/INFO]: There are no more data packs available
+[17:48:27] [Server thread/INFO]: CONSOLE: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[17:48:41] [Server thread/INFO]: A player is required to run this command here
+[17:48:50] [Server thread/INFO]: Unknown function machinegun:tick
+[17:48:55] [Server thread/INFO]: Running function machinegun:load
+[17:49:09] [Server thread/INFO]: Unknown function machinegun:tick
+[17:51:35] [Yggdrasil Key Fetcher/ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to api.minecraftservices.com
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-6.0.57.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-6.0.57.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-6.0.57.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-6.0.57.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+Caused by: java.net.UnknownHostException: api.minecraftservices.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:760) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1288) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-6.0.57.jar:?]
+	... 9 more
+[17:51:44] [Server thread/INFO]: CONSOLE: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[17:51:49] [Server thread/INFO]: CONSOLE: Usage: /reload [permissions|commands|confirm]
+[17:51:52] [Server thread/INFO]: Unknown or incomplete command, see below for error
+confirm<--[HERE]
+[17:52:00] [Server thread/INFO]: Unknown or incomplete command, see below for error
+/reload confirm<--[HERE]
+[17:52:04] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:52:04] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:52:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:52:04] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:52:04] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[17:52:04] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:52:05] [Server thread/INFO]: Loaded 1370 recipes
+[17:52:05] [Server thread/ERROR]: Failed to load function machinegun:tick
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 6: Can't find element 'minecraft:generic.max_health' of type 'minecraft:attribute' at position 88: ...max_health<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1814) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1460) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2036) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 6: Can't find element 'minecraft:generic.max_health' of type 'minecraft:attribute' at position 88: ...max_health<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:92) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812) ~[?:?]
+	... 5 more
+[17:52:05] [Server thread/ERROR]: Couldn't load tag minecraft:tick as it is missing following references: machinegun:tick (from file/machinegun)
+[17:52:05] [Server thread/INFO]: Loaded 1481 advancements
+[17:52:05] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:52:05] [Server thread/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[17:52:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:52:05] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:52:23] [Server thread/INFO]: Unknown function machinegun:tick
+[17:53:18] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:53:18] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:53:18] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:53:18] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:53:18] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[17:53:18] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:53:19] [Server thread/INFO]: Loaded 1370 recipes
+[17:53:19] [Server thread/INFO]: Loaded 1481 advancements
+[17:53:19] [Paper Async Command Builder Thread Pool - 0/ERROR]: Caught previously unhandled exception :
+[17:53:19] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:53:19] [Paper Async Command Builder Thread Pool - 0/ERROR]: Paper Async Command Builder Thread Pool - 0
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:489) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:471) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:53:19] [Server thread/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[17:53:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:53:19] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:55:14] [Server thread/INFO]: Stopping server
+[17:55:14] [Server thread/INFO]: Saving players
+[17:55:14] [Server thread/INFO]: Trmaa_vm lost connection: Server closed
+[17:55:14] [Server thread/INFO]: Trmaa_vm left the game
+[17:55:14] [Server thread/INFO]: Saving worlds
+[17:55:14] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:55:14] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[17:55:14] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[17:55:14] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Saved 1307 block chunks, 205 entity chunks, 0 poi chunks in world 'world' in 1.74s
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[17:55:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[17:55:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.02s
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[17:55:16] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[17:55:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:55:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:55:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:55:16] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:55:16] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[17:55:16] [Server thread/INFO]: All I/O tasks to complete
+[17:55:16] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[17:55:16] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
